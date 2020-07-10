@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="Resources/JS/script.js"> </script>
+        <link rel="stylesheet" type="text/css" href="Vender/CSS/grid.css">
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+      
+        
+    </head>
+    <title>Tổ chức niềm tin</title>
+
+<body>
+
+<nav id="fixNav">
+    <img src="Resources/IMG/82174571_390668298557549_663445942879466490_n-removebg%20(1).png" class="logo">
+  <ul>
+    <li><a href="#">Trang chủ</a></li>
+    <li>
+        <a href="index1.html">Giới Thiệu</a>
+        <ul class="sub-menu">
+        <li><a href="#">Giới Thiệu Về Chúng Tôi</a></li>
+        <li><a href="#">Qui Chế Hoạt Động</a></li>
+        <li><a href="#">Báo Cáo Tài Chính</a></li>
+     </ul>
+      </li>
+    <li>
+        <a href="#">Câu Chuyện</a>
+        <ul class="sub-menu">
+        <li><a href="#">Câu Chuyện ABC</a></li>
+        <li><a href="#">Câu Chuyện XYZ</a></li>
+     </ul>
+      </li>
+    <li>
+        <a href="#">Trẻ Em</a>
+        <ul class="sub-menu">
+        <li><a href="#">Trẻ Khiếm Thính</a></li>
+        <li><a href="#">Trẻ Tự Kỉ</a></li>
+        <li><a href="#">Trẻ Tổn Thương Não</a></li>
+     </ul>
+      </li>
+    <li>
+      <a href="#">Khác</a>
+      <ul class="sub-menu">
+        <li><a href="#">nhận xét về chúng tôi</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+     </ul>
+    </li>
+      <li> <input type="text" aria-required="true" size="20" value="" name="subject"  class="search" placeholder="Tìm Kiếm">
+        
+      </li>
+       <a href="#"><ion-icon name="search-circle-outline"></ion-icon>
+          </a>
+  </ul>
+    
+</nav>
+    <header>
+        <div class="slideshow-container">            
+            <div class="mySlides fade">
+              <img src="Resources/IMG/logo_niemtin.jpg"style="width:150%;height: 550px">              
+            </div>
+
+            <div class="mySlides fade">
+              <img src="resources/IMG/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" style="width:150%;height: 550px">              
+            </div>
+
+            <div class="mySlides fade">
+              <img src="resources/IMG/1.jpg" style="width:150%;height: 550px">              
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="resources/IMG/Preschool_12_930x525.jpg" style="width:150%;height: 550px">              
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="resources/IMG/trung-thu-1-768x432.jpg"style="width:150%;height: 550px">              
+            </div>           
+            
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>                       
+        </div> 
+    
+    
+    
+        <script>
+          //khai báo biến slideIndex đại diện cho slide hiện tại
+          var slideIndex;
+          // KHai bào hàm hiển thị slide
+          function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+
+              slides[slideIndex].style.display = "block";  
+              dots[slideIndex].className += " active";
+              //chuyển đến slide tiếp theo
+                slideIndex++;
+              //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+              if (slideIndex > slides.length - 1) {
+                slideIndex=0;
+              }    
+              //tự động chuyển đổi slide sau 5s
+              setTimeout(showSlides, 3000);
+          }
+          //mặc định hiển thị slide đầu tiên 
+          showSlides(slideIndex = 0);
+
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+        </script>   
+
+    </header>
+<section class="section-features">
+    <h1>------------------ TRẺ EM ------------------</h1>
+    <h2> <img src="Resources/IMG/clipart299936.png" class="hinhduoi1"> </h2>
+            <div class="row">
+                <div class="col span-1-of-3">
+                
+                  <a href="#">  <img src="Resources/IMG/Autism-2-768x591%20(1).jpg" class="hinh"></a>
+                    <h4 class="title">TRẺ KHIẾM THÍNH </h4>
+                    <p>
+Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+<br>
+Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.
+
+                    </p>
+                </div>
+                <div class="col span-1-of-3">
+                
+                    <a href="#">  <img src="Resources/IMG/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" class="hinh"></a>
+                    <h4 class="title">TRẺ TỰ KỶ</h4>
+                    <p>
+Với kinh nghiệm của người làm công tác đánh giá tự kỷ ở trẻ em nhiều năm, một trong những vấn đề thường gặp ở phụ huynh có con được chẩn đoán tự kỷ là phản ứng từ chối chẩn đoán. Đây là phản ứng thường gặp (tôi đã viết vài trường hợp cụ thể), vấn đề là phụ huynh càng thắc mắc chổ này chẩn đoán đúng, chổ kia chẩn đoán sai và cố gắng tìm cho bằng được người chẩn đoán theo ý muốn có thể làm trẻ mất đi thời gian vàng được can thiệp.
+                    </p>
+                </div><div class="col span-1-of-3">
+                
+                <a href="#">  <img src="Resources/IMG/images-1.jpg" class="hinh"></a>
+                <h4 class="title">TRẺ BỊ TỔN THƯƠNG NÃO</h4>
+                    <p>
+Bạn có biết các quốc gia trên toàn cầu sẽ chuyển sang màu xanh cho ngày Thế giới dành cho người Tổn Thương Não, vào ngày 6/10/ 2019 không?
+<br>
+Tổn thương não/ bại não (CP) là dạng khuyết tật, ảnh hưởng thể chất phổ biến nhất trong thời thơ ấu, nhưng lại có ít người biết đến.
+
+                    </p>
+                </div>
+            </div>
+    <div class="row">
+                <div class="col span-1-of-3">
+                
+                  <a href="#">  <img src="Resources/IMG/Preschool_12_930x525.jpg" class="hinh"></a>
+                    <h4 class="title">HỘI CHỨNG DOWN </h4>
+                    <p>
+Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ. Nếu trẻ bị khiếm thính kết hợp
+
+                    </p>
+                </div>
+                <div class="col span-1-of-3">
+                
+                    <a href="#">  <img src="Resources/IMG/images-1-1.jpg" class="hinh"></a>
+                    <h4 class="title">TRẺ ADHD</h4>
+                    <p>
+Câu chuyện bắt đầu từ một người mẹ trẻ tên là Shel Shelly đang sống tại UK Chào các bạn, tôi muốn chia sẻ với các bạn, về quá trình làm mẹ của một cậu bé bị Tăng động Giảm chú Ý,có thể gọi tắt là ADHD (viết tắt từ chữ:Attention Deficit Hyperactivity Disorder). Đối với tôi, đây là một hành trình, mà các thành viên trong gia đình luôn luôn đấu tranh lẫn nhau, rồi lại đấu tranh với những người khác ngoài xã hội,chỉ mọi việc là: Đấu tranh chống lại những quan niệm sai lầm, với những cái nhìn chưa đúng đắn về những hành vi của con trẻ...
+                    </p>
+                </div><div class="col span-1-of-3">
+                
+                <a href="#">  <img src="Resources/IMG/Preschool_12_930x525.jpg" class="hinh"></a>
+                <h4 class="title">CÁC TRẺ EM KHÁC</h4>
+                    <p>
+Câu chuyện bắt đầu từ một người mẹ trẻ tên là Shel Shelly đang sống tại UK Chào các bạn, tôi muốn chia sẻ với
+
+                    </p>
+                </div>
+            </div>
+        </section> 
+    <h1>------------------ CÂU CHUYỆN ------------------</h1>
+    <h2> <img src="Resources/IMG/clipart1298728.png" class="hinhduoi2"> </h2>
+    <section class="cauchuyen">
+        <div class="chuyen">
+            
+            <div class="col span-1-of-2"><a href="#">  <img src="Resources/IMG/clipart473835.png" class="hinhanh11"></a> </div>
+            <div class="col span-1-of-2"><h3>TẠI SAO QUÁ TRÌNH PHÁT TRIỂN CỦA TRẺ ĐƯỢC XEM LÀ QUAN TRỌNG?</h3>
+           <p class="chuyen1">    Quá trình phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai,</p></div> 
+            
+        </div>
+         <div class="chuyen">
+            
+             <div class="col span-1-of-2"> <h3>Mảnh ghép mùa thu</h3>
+           <p class="chuyen1"> Trời đã thương Niềm Tin, Quỹ HPDF- Chương trình Hỗ trợ thân nhân người khuyết tật và các bạn TNV.
+Đến giờ di chuyển những dụng cụ phục hồi chức năng cho các bé SN ( tổn thương não), thì trời không mưa. Nụ cười xuất hiện trên môi của từng người trong nhóm chúng tôi</p></div>
+            <div class="col span-1-of-2"><a href="#">  <img src="Resources/IMG/clipart463796.png" class="hinhanh12"></a></div>
+        </div>
+         <div class="chuyen">
+            <div class="col span-1-of-2"><a href="#">  <img src="Resources/IMG/clipart949888.png" class="hinhanh13"></a></div>
+              <div class="col span-1-of-2"><h3>Trung thu ấm áp</h3>
+           <p class="chuyen1">Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam.
+Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé.</p></div>
+            
+        </div>
+    </section>
+    <section >
+        <h1>------------------ CẢM NHẬN ------------------</h1>
+        <h2> <img src="Resources/IMG/clipart4433952.png" class="hinhduoi2"> </h2>
+
+<div class="grid-container">
+  <div class="grid-item">
+      <p>Họ và Tên: Cao Văn Trọng</p>
+     <p class="nhay">"</p> 
+     <p>Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé</p> <p class="nhayend">"</p> 
+    
+      
+    </div>
+  <div class="grid-item">
+      <p>Họ và Tên: Cao Văn Trọng</p>
+     <p class="nhay">"</p> 
+     <p>Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé</p> <p class="nhayend">"</p> 
+    
+      
+    </div>
+    <div class="grid-item">
+      <p>Họ và Tên: Cao Văn Trọng</p>
+     <p class="nhay">"</p> 
+     <p>Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé</p> <p class="nhayend">"</p> 
+    
+      
+    </div>
+    <div class="grid-item">
+      <p>Họ và Tên: Cao Văn Trọng</p>
+     <p class="nhay">"</p> 
+     <p>Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé</p> <p class="nhayend">"</p> 
+    
+      
+    </div>
+    <div class="grid-item">
+      <p>Họ và Tên: Cao Văn Trọng</p>
+     <p class="nhay">"</p> 
+     <p>Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé</p> <p class="nhayend">"</p> 
+    
+      
+    </div>
+    <div class="grid-item">
+      <p>Họ và Tên: Cao Văn Trọng</p>
+     <p class="nhay">"</p> 
+     <p>Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các bé</p> <p class="nhayend">"</p> 
+    
+      
+    </div>
+  
+  
+</div>
+    </section>
+<div class="doitac">
+    <h1>------------------ ĐỐI TÁC ------------------</h1>
+    <h2> <img src="Resources/IMG/clipart106780.png" class="hinhduoi2"> </h2>
+    <marquee behavior="alternate"> 
+        <img src="Resources/IMG/download%20(1).png">
+         <img src="Resources/IMG/download.png">
+         <img src="Resources/IMG/download1.jpg">
+         <img src="Resources/IMG/images%20(1).jpg">
+        
+    </marquee>
+    </div>
+     <footer class="footer">
+        <div class="container">
+            <div class="col span-1-of-3">
+                <p><img alt="" src="resources/img/82174571_390668298557549_663445942879466490_n-removebg%20(1).png" class="logo-footer" >
+                <p class="thongtin">"Với mong muốn được hỗ trợ trẻ phát triển và giúp trẻ hòa nhập vào xã hội, tạo ra những giá trị thay đổi từ một trẻ luôn mặc cảm, sẽ trở thanh trẻ luôn tự tin và cởi mở trong giao tiếp, Niềm Tin mong muốn hỗ trợ trẻ, với số lượng rất ít trẻ nhưng đảm bảo tạo ra sự thay đổi cho trẻ và gia đình về nhận thức, trẻ được hỗ trợ bằng nguồn kinh phí do Niềm Tin tự tạo kết hợp với sự đóng góp của phụ huynh, bền vững theo thời gian và phù hợp với điều kiện cá nhân của từng trẻ, nhưng lại không bị lệ thuộc vào thời gian và kinh phí hỗ trợ của dự án." </p>    
+                </div><!-- END: .footer-info -->
+            <div class="col span-1-of-3">
+                <h4 class="footer-title">Đăng ký nhận bản tin</h4>
+         <form id="contact-form" class="contact-form" method="post">                    
+             <div class="contact-form-name">
+                 <p class="write"> Họ Và Tên:</p>
+                        <input type="text" aria-required="true" size="30" value="" name="name" id="contact-name" class="form-control" placeholder="Họ và tên">
+                    </div>
+                    <div class="contact-form-email">
+                    <p class="write">Số Điện Thoại:</p>
+
+                        <input type="text" aria-required="true" size="30" value="" name="email" id="contact-phone" class="form-control" placeholder="Số điện thoại">
+                    </div>
+                    <div class="contact-form-subject">
+                     <p class="write">Email:</p>
+
+                        <input type="text" aria-required="true" size="30" value="" name="subject" id="contact-email" class="form-control" placeholder="Email (không bắt buộc)">
+                    </div>
+                    <div class="contact-form-message">
+                                         <p class="write">Điều muốn chia sẻ:</p>
+
+                        <textarea aria-required="true" rows="6" cols="40" name="message" id="contact-content" class="form-control" placeholder="Tình trạng"></textarea>
+                        <input type="hidden" aria-required="true" name="contact_position" id="contact-position" >
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="contact-form-submit text-center">
+                                <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button">Gửi</button>
+                            </p>
+                        </div>
+             </div>    
+                
+                    <br>
+                    <a class="icon">Chia sẻ trên:</a>
+                    <a href="https://www.facebook.com/"><ion-icon name="logo-facebook" class="icon-app" id="facebook"></ion-icon></a>                    
+                    <a href="https://www.twitter.com/"><ion-icon name="logo-twitter" class="icon-app" id="twitter"></ion-icon></a>
+                    <a href="https://www.youtube.com/"><ion-icon name="logo-youtube" class="icon-app" id="youtube"></ion-icon></a>
+                </form>
+            </div>
+               
+            <div class="col span-1-of-3">
+                <h4 class="footer-title">Thông tin</h4>
+                <p class="footer-contact-item footer-contact-phone"><span>Địa chỉ:</span> 82, lầu 1 Phong Phú, P.12, Quận 8, Tp Hồ Chí Minh</p>
+                <p class="footer-contact-item footer-contact-phone"><span>Điện thoại: </span>0123456789</p>
+                <p class="footer-contact-item  footer-contact-email"><span>Email: </span>tochucniemtin@gmail.com</p>
+                <p class="footer-contact-item footer-contact-website"><span>Website: </span>www.tochucniemtin.vn</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.846798047147!2d106.65788431425621!3d10.746288262689106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e58c0298abf%3A0x6b4e6efdfa1f4fbc!2zODIgbOG6p3UsIDEgUGhvbmcgUGjDuiwgcGjGsOG7nW5nIDExLCBRdeG6rW4gOCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1593616487279!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div><!-- END: footer-contact -->
+            <div class="clearfix"></div>
+        </div><!-- END: container -->
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>

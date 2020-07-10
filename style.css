@@ -1,0 +1,442 @@
+#fixNav{
+  width: 100%;
+  height: 75px;
+  background-color: #dce329;
+  display: block;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+#fixNav ul{
+    float: right;
+  margin: 0;
+  padding: 0;
+margin-right: 10%;
+}
+#fixNav ul li{
+  list-style:none inside;
+  width: auto;
+  float: left;
+  line-height: 75px; /*Cho text canh giữa menu*/
+  color: #fff;
+  padding: 0;
+  position: relative;
+}
+#fixNav ul li a{
+  text-transform: uppercase;
+  white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+  padding: 0 25px;
+  color: #fff;
+  display: block;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-family: sans-serif;
+    font-weight: 600
+}
+/*CSS Style cho Submenu*/
+#fixNav ul li ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  background-color: #252525;
+  
+}
+
+#fixNav ul li ul li{
+  display: block;
+  padding:0;
+  margin: 0;
+  float: none; /*Bỏ float cho li cấp thứ 2*/
+}
+/* Hover cho submenu */
+#fixNav ul li:hover {
+  /* Hover thì li sẽ đổi màu*/
+  background-color: rgba(135, 165, 165, 0.61);
+}
+#fixNav ul li:hover ul{
+  /*Display ra submenu*/
+  display: block;
+}
+
+.slideshow-container {    
+    padding-top: 7%;
+    padding-left: 5.5%;
+    max-width: 60%;
+    position: relative;      
+}
+
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+
+/* Định dạng nội dung Caption */
+.text {
+    color: #f2f2f2;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;    
+}
+
+/* khi được hover, active đổi màu nền */
+.active, 
+.dot:hover {
+    background-color: #717171;    
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 3}
+}
+
+@keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 3}
+}
+.row {
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+.hinh
+{
+    width: 100%;
+    height: 200px;
+    box-shadow: 2px 2px;
+}
+.hinhanh {
+    display: inline-block;
+}
+
+.chuyen {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px; 
+    display: flex;
+}
+
+.hinhanh1 {
+    height: 200px;
+    
+}
+.hinhanh2 {
+    float: right;
+    height: 200px;
+}
+.chuyen1
+{
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 600;
+    color: gray;
+    margin-top: 10%;
+}
+.timkiem{
+    margin-top: 10%;
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+.grid-container {
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+     grid-row-gap: 50px;
+     grid-column-gap: 90px;
+    margin-bottom: 200px;
+    
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  padding: 35px;
+  font-size: 15px;
+  text-align:justify;
+    background-color: rgba(247, 179, 179, 0.21);
+}
+.camnhan {
+    height: 100px;
+    width: 50%;
+    margin-left:25% ;
+}
+
+.gui {
+    float: right;
+    height: 30px;
+    margin-top: 40px;
+    margin-right: 21%
+}
+
+.feel {
+    
+    display: block;
+    margin-top: 50px;
+}
+
+#facebook:hover {
+    background-color: white;
+    color: #0037b4;
+}
+
+#facebook:active { 
+    transform: translateY(5px);
+}
+
+#twitter:hover {
+    background-color: #2cc7db;
+    color: white;
+}
+
+#twitter:active { 
+    transform: translateY(5px);
+}
+
+#youtube:hover {
+    background-color: white;
+    color: #f72f00;
+}
+
+#youtube:active { 
+    transform: translateY(5px);
+}
+
+
+
+.icon-app {
+    display: inline-block;
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+    color: black;
+}
+
+.hinhnen1 {
+    display: inline-block;
+    height: 100%;
+    margin-left: 20%;
+    
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    margin-left: 10%;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #c7441d;
+    font-size: 350%;
+    font-weight: 700;
+    
+}
+body
+{
+    font-family: sans-serif;
+}
+h2
+{
+    
+}
+.hinhduoi1 {
+    width: 10%;
+    margin-left: 45%
+}
+.hinhanh11
+{
+    width: 50%;
+    margin-left: 28%
+}
+.hinhanh12 {
+    margin-left: 35%;
+    width: 39%;
+}
+
+.hinhanh13 {
+    width: 39%;
+    margin-left: 27%;
+}
+h3
+{
+    margin-bottom: 2%;
+    margin-top: 12%;
+    font-size: 30px;
+    text-align: center;
+    color: chocolate
+}
+
+
+.hinhduoi2 {
+    width: 10%;
+    margin-left: 45%;
+}
+
+
+
+
+
+.nhayend {
+    float: right;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.doitac {
+    display: block;
+    margin-top: 500px;
+}
+
+.nhay {
+    font-size: 30px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+.container {
+    background-color: darkslategrey;
+    display: flex;
+    
+}
+
+iframe {
+    width: 90%;
+    height: 50%;
+}
+
+.thongtin {
+    padding-left: 40px;
+    text-align: justify;
+    font-size: 21px;
+    font-family: serif;
+    font-style: oblique;
+    color: aliceblue;
+        
+}
+body footer .footer-title {
+    color: aliceblue;
+    font-size: 30px;
+}
+.logo-footer {
+    width: 45%;
+    margin-left: 27%
+}
+    
+span {
+    color:coral;
+    font-weight: 600;
+}
+
+.footer-contact-item {
+    color: aliceblue;
+    font-style: oblique;
+}
+
+.row-item {
+    
+}
+
+.form-email {
+    align-content: center;
+}
+
+
+.contact-form-name {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+
+.col-sm-12 {
+    text-align: center;
+}
+
+.form-control {
+    height: 30px;
+    border-color: none;
+    background-color: whitesmoke;
+    border-radius: 0;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.write {
+    color: orange;
+}
+
+
+
+
+
+
+
+ion-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 22px;
+}
+
+.search {
+     height: 30px;
+    border-color: none;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px;
+}
+
+.title {
+    color: #10ce93;
+}
